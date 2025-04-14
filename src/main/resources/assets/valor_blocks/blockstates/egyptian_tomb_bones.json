@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "valor_blocks:block/egyptian_tomb_bones"
+    },
+    "facing=south": {
+      "model": "valor_blocks:block/egyptian_tomb_bones",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valor_blocks:block/egyptian_tomb_bones",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "valor_blocks:block/egyptian_tomb_bones",
+      "y": 90
+    }
+  }
+}
