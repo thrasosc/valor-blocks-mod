@@ -9,14 +9,12 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.pixeldreamstudios.valor_blocks.ValorBlocks;
-import net.pixeldreamstudios.valor_blocks.block.ValorBlock;
+import net.pixeldreamstudios.valor_blocks.block.CageBlock;
 
 public class BlockRegistry {
   public static final Block CAGE =
       register(
-          new ValorBlock(
-              Block.box(0, -3, 0, 16, 32, 16),
-              BlockBehaviour.Properties.of().sound(SoundType.METAL)),
+          new CageBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).noOcclusion()),
           "cage",
           true);
 
