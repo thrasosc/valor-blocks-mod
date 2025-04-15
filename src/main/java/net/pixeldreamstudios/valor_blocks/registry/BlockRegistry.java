@@ -15,8 +15,8 @@ public class BlockRegistry {
   public static final Block CAGE =
       register(
           new ValorBlock(
-              Block.box(0, 0, 0, 16, 32, 16),
-              BlockBehaviour.Properties.of().sound(SoundType.METAL).noOcclusion()),
+              Block.box(0, -3, 0, 16, 32, 16),
+              BlockBehaviour.Properties.of().sound(SoundType.METAL)),
           "cage",
           true);
 
