@@ -12,7 +12,7 @@ import net.pixeldreamstudios.valor_blocks.ValorBlocks;
 import net.pixeldreamstudios.valor_blocks.block.CageBlock;
 
 public class BlockRegistry {
-  public static final Block CAGE =
+  public static final Block CAGE_BLOCK =
       register(
           new CageBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).noOcclusion()),
           "cage",
