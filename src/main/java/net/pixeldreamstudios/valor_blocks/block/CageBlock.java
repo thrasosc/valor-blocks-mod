@@ -22,7 +22,6 @@ import org.jetbrains.annotations.Nullable;
 public class CageBlock extends ValorBlock {
 
   public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
-  public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
   public static final VoxelShape SHAPE_LOWER = Block.box(1.0D, 0.01D, 1.0D, 15.0D, 16.0D, 15.0D);
   public static final VoxelShape SHAPE_UPPER = Block.box(1.0D, 0.01D, 1.0D, 15.0D, 14.0D, 15.0D);
@@ -31,21 +30,11 @@ public class CageBlock extends ValorBlock {
 
   public CageBlock(BlockBehaviour.Properties properties) {
     super(properties);
-    this.registerDefaultState(
-        this.stateDefinition
-            .any()
-            .setValue(FACING, Direction.NORTH)
-            .setValue(HALF, DoubleBlockHalf.LOWER));
   }
 
   @Override
   protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
     return CODEC;
-  }
-
-  @Override
-  public RenderShape getRenderShape(BlockState state) {
-    return RenderShape.MODEL;
   }
 
   private VoxelShape getShapeForState(BlockState state) {
@@ -72,16 +61,6 @@ public class CageBlock extends ValorBlock {
   public @NotNull VoxelShape getShape(
       BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
     return getShapeForState(state);
-  }
-
-  @Override
-  public @NotNull BlockState rotate(BlockState state, Rotation rotation) {
-    return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
-  }
-
-  @Override
-  public @NotNull BlockState mirror(BlockState state, Mirror mirror) {
-    return state.rotate(mirror.getRotation(state.getValue(FACING)));
   }
 
   @Override
