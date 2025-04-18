@@ -31,7 +31,9 @@ public class CageBlock extends ValorBlock {
 
   public CageBlock(BlockBehaviour.Properties properties) {
     super(properties);
-    this.registerDefaultState(this.stateDefinition.any()
+    this.registerDefaultState(
+        this.stateDefinition
+            .any()
             .setValue(FACING, Direction.NORTH)
             .setValue(HALF, DoubleBlockHalf.LOWER));
   }
@@ -61,12 +63,14 @@ public class CageBlock extends ValorBlock {
   }
 
   @Override
-  public @NotNull VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+  public @NotNull VoxelShape getCollisionShape(
+      BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
     return getShapeForState(state);
   }
 
   @Override
-  public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+  public @NotNull VoxelShape getShape(
+      BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
     return getShapeForState(state);
   }
 
@@ -90,33 +94,42 @@ public class CageBlock extends ValorBlock {
   public BlockState getStateForPlacement(BlockPlaceContext context) {
     BlockPos pos = context.getClickedPos();
     Level level = context.getLevel();
-    if (pos.getY() < level.getMaxBuildHeight() - 1 && level.getBlockState(pos.above()).canBeReplaced(context)) {
+    if (pos.getY() < level.getMaxBuildHeight() - 1
+        && level.getBlockState(pos.above()).canBeReplaced(context)) {
       return this.defaultBlockState()
-              .setValue(FACING, context.getHorizontalDirection())
-              .setValue(HALF, DoubleBlockHalf.LOWER);
+          .setValue(FACING, context.getHorizontalDirection())
+          .setValue(HALF, DoubleBlockHalf.LOWER);
     } else {
       return null;
     }
   }
 
   @Override
-  public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
+  public BlockState updateShape(
+      BlockState state,
+      Direction facing,
+      BlockState facingState,
+      LevelAccessor level,
+      BlockPos currentPos,
+      BlockPos facingPos) {
     DoubleBlockHalf half = state.getValue(HALF);
-    if (facing.getAxis() == Direction.Axis.Y && half == DoubleBlockHalf.LOWER == (facing == Direction.UP)) {
+    if (facing.getAxis() == Direction.Axis.Y
+        && half == DoubleBlockHalf.LOWER == (facing == Direction.UP)) {
       return facingState.is(this) && facingState.getValue(HALF) != half
-              ? state.setValue(FACING, facingState.getValue(FACING))
-              : Blocks.AIR.defaultBlockState();
+          ? state.setValue(FACING, facingState.getValue(FACING))
+          : Blocks.AIR.defaultBlockState();
     } else {
-      return half == DoubleBlockHalf.LOWER && facing == Direction.DOWN && !state.canSurvive(level, currentPos)
-              ? Blocks.AIR.defaultBlockState()
-              : super.updateShape(state, facing, facingState, level, currentPos, facingPos);
+      return half == DoubleBlockHalf.LOWER
+              && facing == Direction.DOWN
+              && !state.canSurvive(level, currentPos)
+          ? Blocks.AIR.defaultBlockState()
+          : super.updateShape(state, facing, facingState, level, currentPos, facingPos);
     }
   }
 
   @Override
-  public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
+  public void setPlacedBy(
+      Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
     level.setBlock(pos.above(), state.setValue(HALF, DoubleBlockHalf.UPPER), 3);
   }
-
 }
-
