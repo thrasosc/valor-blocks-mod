@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.pixeldreamstudios.valor_blocks.ValorBlocks;
 import net.pixeldreamstudios.valor_blocks.block.CageBlock;
 import net.pixeldreamstudios.valor_blocks.block.SkeletonFloorBlock;
+import net.pixeldreamstudios.valor_blocks.block.SkeletonWallBlock;
 
 public class BlockRegistry {
   public static final Block CAGE_BLOCK =
@@ -23,6 +24,12 @@ public class BlockRegistry {
           new SkeletonFloorBlock(
               BlockBehaviour.Properties.of().sound(SoundType.BONE_BLOCK).noOcclusion()),
           "skeleton_floor",
+          true);
+  public static final Block SKELETON_WALL_BLOCK =
+      register(
+          new SkeletonWallBlock(
+              BlockBehaviour.Properties.of().sound(SoundType.BONE_BLOCK).noOcclusion()),
+          "skeleton_wall",
           true);
 
   public static Block register(Block block, String name, boolean shouldRegisterItem) {
