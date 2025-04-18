@@ -10,12 +10,19 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.pixeldreamstudios.valor_blocks.ValorBlocks;
 import net.pixeldreamstudios.valor_blocks.block.CageBlock;
+import net.pixeldreamstudios.valor_blocks.block.SkeletonFloorBlock;
 
 public class BlockRegistry {
   public static final Block CAGE_BLOCK =
       register(
           new CageBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).noOcclusion()),
           "cage",
+          true);
+  public static final Block SKELETON_FLOOR_BLOCK =
+      register(
+          new SkeletonFloorBlock(
+              BlockBehaviour.Properties.of().sound(SoundType.BONE_BLOCK).noOcclusion()),
+          "skeleton_floor",
           true);
 
   public static Block register(Block block, String name, boolean shouldRegisterItem) {

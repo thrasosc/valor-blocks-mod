@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "valor_blocks:block/skeleton_floor"
+    },
+    "facing=east": {
+      "model": "valor_blocks:block/skeleton_floor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "valor_blocks:block/skeleton_floor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valor_blocks:block/skeleton_floor",
+      "y": 270
+    }
+  }
+}
+

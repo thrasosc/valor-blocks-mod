@@ -10,5 +10,7 @@ public class ValorBlocksClient implements ClientModInitializer {
   @Override
   public void onInitializeClient() {
     BlockRenderLayerMap.INSTANCE.putBlock(BlockRegistry.CAGE_BLOCK, RenderType.cutoutMipped());
+    BlockRenderLayerMap.INSTANCE.putBlock(
+        BlockRegistry.SKELETON_FLOOR_BLOCK, RenderType.cutoutMipped());
   }
 }

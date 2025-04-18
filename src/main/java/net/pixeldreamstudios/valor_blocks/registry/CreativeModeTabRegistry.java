@@ -32,6 +32,7 @@ public class CreativeModeTabRegistry {
         .register(
             creativeModeTab -> {
               creativeModeTab.accept(BlockRegistry.CAGE_BLOCK.asItem());
+              creativeModeTab.accept(BlockRegistry.SKELETON_FLOOR_BLOCK.asItem());
             });
   }
 }
