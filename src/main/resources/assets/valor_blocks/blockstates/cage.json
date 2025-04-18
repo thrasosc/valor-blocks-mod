@@ -1,12 +1,5 @@
 {
   "variants": {
-    "facing=west,half=lower": {
-      "model": "valor_blocks:block/cage_lower",
-      "y": 90
-    },
-    "facing=south,half=lower": {
-      "model": "valor_blocks:block/cage_lower"
-    },
     "facing=north,half=lower": {
       "model": "valor_blocks:block/cage_lower",
       "y": 180
@@ -15,12 +8,12 @@
       "model": "valor_blocks:block/cage_lower",
       "y": 270
     },
-    "facing=west,half=upper": {
-      "model": "valor_blocks:block/cage_top",
-      "y": 90
+    "facing=south,half=lower": {
+      "model": "valor_blocks:block/cage_lower"
     },
-    "facing=south,half=upper": {
-      "model": "valor_blocks:block/cage_top"
+    "facing=west,half=lower": {
+      "model": "valor_blocks:block/cage_lower",
+      "y": 90
     },
     "facing=north,half=upper": {
       "model": "valor_blocks:block/cage_top",
@@ -29,6 +22,13 @@
     "facing=east,half=upper": {
       "model": "valor_blocks:block/cage_top",
       "y": 270
+    },
+    "facing=south,half=upper": {
+      "model": "valor_blocks:block/cage_top"
+    },
+    "facing=west,half=upper": {
+      "model": "valor_blocks:block/cage_top",
+      "y": 90
     }
   }
 }
