@@ -42,22 +42,6 @@ public class CageBlock extends ValorBlock {
   }
 
   @Override
-  public @NotNull VoxelShape getOcclusionShape(BlockState state, BlockGetter level, BlockPos pos) {
-    return getShapeForState(state);
-  }
-
-  @Override
-  public boolean useShapeForLightOcclusion(BlockState state) {
-    return true;
-  }
-
-  @Override
-  public @NotNull VoxelShape getCollisionShape(
-      BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-    return getShapeForState(state);
-  }
-
-  @Override
   public @NotNull VoxelShape getShape(
       BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
     return getShapeForState(state);
