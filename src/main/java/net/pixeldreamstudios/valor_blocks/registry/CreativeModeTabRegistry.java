@@ -18,7 +18,7 @@ public class CreativeModeTabRegistry {
           ResourceLocation.fromNamespaceAndPath(ValorBlocks.MOD_ID, "creative_mode_tab"));
   public static final CreativeModeTab VALOR_BLOCKS_CREATIVE_MODE_TAB =
       FabricItemGroup.builder()
-          .icon(() -> new ItemStack(BlockRegistry.CAGE_BLOCK.asItem()))
+          .icon(() -> new ItemStack(BlockRegistry.SKELETON_WALL_BLOCK.asItem()))
           .title(Component.translatable("creative_mode_tab." + ValorBlocks.MOD_ID))
           .build();
 
