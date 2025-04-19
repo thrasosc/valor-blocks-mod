@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=north,half=lower": {
+      "model": "valor_blocks:block/egyptian_statue_bottom",
+      "y": 180
+    },
+    "facing=east,half=lower": {
+      "model": "valor_blocks:block/egyptian_statue_bottom",
+      "y": 270
+    },
+    "facing=south,half=lower": {
+      "model": "valor_blocks:block/egyptian_statue_bottom"
+    },
+    "facing=west,half=lower": {
+      "model": "valor_blocks:block/egyptian_statue_bottom",
+      "y": 90
+    },
+    "facing=north,half=upper": {
+      "model": "valor_blocks:block/egyptian_statue_top",
+      "y": 180
+    },
+    "facing=east,half=upper": {
+      "model": "valor_blocks:block/egyptian_statue_top",
+      "y": 270
+    },
+    "facing=south,half=upper": {
+      "model": "valor_blocks:block/egyptian_statue_top"
+    },
+    "facing=west,half=upper": {
+      "model": "valor_blocks:block/egyptian_statue_top",
+      "y": 90
+    }
+  }
+}
+

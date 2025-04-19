@@ -35,6 +35,7 @@ public class CreativeModeTabRegistry {
               creativeModeTab.accept(BlockRegistry.CAGE_SKELETON_BLOCK.asItem());
               creativeModeTab.accept(BlockRegistry.SKELETON_FLOOR_BLOCK.asItem());
               creativeModeTab.accept(BlockRegistry.SKELETON_WALL_BLOCK.asItem());
+              creativeModeTab.accept(BlockRegistry.EGYPTIAN_STATUE_BLOCK.asItem());
             });
   }
 }
