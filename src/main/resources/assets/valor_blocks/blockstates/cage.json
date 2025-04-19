@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north,half=lower": {
-      "model": "valor_blocks:block/cage_lower",
+      "model": "valor_blocks:block/cage_bottom",
       "y": 180
     },
     "facing=east,half=lower": {
-      "model": "valor_blocks:block/cage_lower",
+      "model": "valor_blocks:block/cage_bottom",
       "y": 270
     },
     "facing=south,half=lower": {
-      "model": "valor_blocks:block/cage_lower"
+      "model": "valor_blocks:block/cage_bottom"
     },
     "facing=west,half=lower": {
-      "model": "valor_blocks:block/cage_lower",
+      "model": "valor_blocks:block/cage_bottom",
       "y": 90
     },
     "facing=north,half=upper": {
