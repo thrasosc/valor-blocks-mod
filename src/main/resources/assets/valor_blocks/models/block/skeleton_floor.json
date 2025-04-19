@@ -6,8 +6,8 @@
     32
   ],
   "textures": {
-    "1": "valor_blocks:block/skeleton_floor",
-    "particle": "valor_blocks:block/skeleton_floor"
+    "1": "valor_blocks:block/skeleton",
+    "particle": "valor_blocks:block/skeleton"
   },
   "elements": [
     {

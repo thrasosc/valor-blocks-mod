@@ -1,6 +1,7 @@
 {
   "creative_mode_tab.valor_blocks": "Valor Blocks",
   "block.valor_blocks.cage": "Cage",
+  "block.valor_blocks.cage_skeleton": "Cage with Skeleton",
   "block.valor_blocks.skeleton_floor": "Laying Skeleton",
   "block.valor_blocks.skeleton_wall": "Sitting Skeleton"
 }

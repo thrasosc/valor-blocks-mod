@@ -19,6 +19,11 @@ public class BlockRegistry {
           new CageBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).noOcclusion()),
           "cage",
           true);
+  public static final Block CAGE_SKELETON_BLOCK =
+      register(
+          new CageBlock(BlockBehaviour.Properties.of().sound(SoundType.METAL).noOcclusion()),
+          "cage_skeleton",
+          true);
   public static final Block SKELETON_FLOOR_BLOCK =
       register(
           new SkeletonFloorBlock(
