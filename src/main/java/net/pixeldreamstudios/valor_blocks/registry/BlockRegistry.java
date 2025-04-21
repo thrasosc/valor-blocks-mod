@@ -41,6 +41,11 @@ public class BlockRegistry {
           new CageBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).noOcclusion()),
           "egyptian_statue",
           true);
+  public static final Block EGYPTIAN_TOMB_BLOCK =
+      register(
+          new CageBlock(BlockBehaviour.Properties.of().sound(SoundType.STONE).noOcclusion()),
+          "egyptian_tomb",
+          true);
 
   public static Block register(Block block, String name, boolean shouldRegisterItem) {
     // Register the block and its item.

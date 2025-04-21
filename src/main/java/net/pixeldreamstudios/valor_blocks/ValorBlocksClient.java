@@ -18,5 +18,7 @@ public class ValorBlocksClient implements ClientModInitializer {
         BlockRegistry.SKELETON_WALL_BLOCK, RenderType.cutoutMipped());
     BlockRenderLayerMap.INSTANCE.putBlock(
         BlockRegistry.EGYPTIAN_STATUE_BLOCK, RenderType.cutoutMipped());
+    BlockRenderLayerMap.INSTANCE.putBlock(
+        BlockRegistry.EGYPTIAN_TOMB_BLOCK, RenderType.cutoutMipped());
   }
 }
