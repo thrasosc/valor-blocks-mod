@@ -91,7 +91,7 @@ publishing {
 
 unifiedPublishing {
     project {
-        displayName = "Vintage Animations $project.version"
+        displayName = "Valor Blocks $project.version"
         gameVersions = ["1.21.1"]
         gameLoaders = ["fabric"]
         releaseType = "alpha" // Optional, use "release", "beta" or "alpha"
