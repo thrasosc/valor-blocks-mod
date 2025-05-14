@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=north,half=lower": {
+      "model": "valor_blocks:block/egyptian_tomb_leading",
+      "y": 180
+    },
+    "facing=east,half=lower": {
+      "model": "valor_blocks:block/egyptian_tomb_leading",
+      "y": 270
+    },
+    "facing=south,half=lower": {
+      "model": "valor_blocks:block/egyptian_tomb_leading"
+    },
+    "facing=west,half=lower": {
+      "model": "valor_blocks:block/egyptian_tomb_leading",
+      "y": 90
+    },
+    "facing=north,half=upper": {
+      "model": "valor_blocks:block/egyptian_tomb_trailing",
+      "y": 180
+    },
+    "facing=east,half=upper": {
+      "model": "valor_blocks:block/egyptian_tomb_trailing",
+      "y": 270
+    },
+    "facing=south,half=upper": {
+      "model": "valor_blocks:block/egyptian_tomb_trailing"
+    },
+    "facing=west,half=upper": {
+      "model": "valor_blocks:block/egyptian_tomb_trailing",
+      "y": 90
+    }
+  }
+}
+
