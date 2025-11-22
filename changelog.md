@@ -4,4 +4,4 @@
 
 - first alpha release
 
-[![](https://www.bisecthosting.com/images/CF/PixelDreamStudios/SPEC_PixelDreamStudios_Promo.webp)](https://bisecthosting.com/PixelDream)
+[![](https://www.bisecthosting.com/images/CF/Valor_New/MP_Valor_promo.webp)](https://bisecthosting.com/PixelDream)
